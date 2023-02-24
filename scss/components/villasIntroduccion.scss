@@ -1,0 +1,60 @@
+/// Componente: cabacera villas
+#villas-introduccion{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    @include flex($justyfycontent:flex-end, $alignitem:center, $direction:column);
+    background-color: color(secundary);
+    margin-top: 1%;
+    color: color(primary);
+    text-align: center;
+    padding: 2%;
+    // @include flex($alignitem:stretch);
+    .villas-intro{
+        height: 70%;
+    }
+    .villas-search{
+        height: 30%;
+        width: 100%;
+        @include flex($justyfycontent:flex-end, $alignitem:center);
+        background-color: color(primary);
+        padding: 2%;
+        color: color(quaternary);
+        font-size: medium;
+        @include fafaIcons(color(secundary), 2em);
+        label{
+            margin-right: 1%;
+            font-size: 1em;
+            margin-left: 3%;
+        }
+        input{
+            margin-right: 1%;
+            width: 40%;
+            padding: 1%;
+        }
+        div{
+            @include flex($justyfycontent:flex-end, $alignitem:center);
+            width: 70%;
+        }
+        @include button();
+    }
+}
+@include response(md){
+    #villas-introduccion{
+        .villas-intro{
+            height: 100%;
+        }
+        .villas-search{
+
+                flex-direction: column;
+                div{
+                    justify-content: center;
+                    margin: 2%;
+
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+    }
+}
+    

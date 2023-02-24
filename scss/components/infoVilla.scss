@@ -1,0 +1,90 @@
+/// Componente: informacion detallada villa
+#section-info-villa{
+    @include flex($alignitem:stretch);
+    #infoVilla{
+        @include fafaIcons(color(secundary), $font-size: 1.5rem);
+        width: 60%;
+        padding: 3%;
+        .infoVillaContainer{
+            @include flex($alignitem:stretch);
+            justify-content: space-between;
+            .infoVilla1{
+                p{
+                    margin: 0.5%;
+                }
+                h2{
+                    margin: 0.5%;
+                    font-family: $font-family2;
+                }
+
+            }
+            .infoVilla2{
+                width: 20%;
+                p{
+                    margin: 0.5%;
+                }
+                h1{
+                    margin: 0.5%;
+                }
+                div{
+                    i{
+                        margin-right: 5%;
+                    }
+                }
+                @include flex($direction: column, $alignitem:none);
+            }
+        }
+        .infoVillaContainer2{
+            margin-top: 3%;
+            .enlaces{
+                color: color(terciary);
+                a{
+                    margin-left: 2%;
+                }
+            }
+            .informacionDetalleVilla{
+                font-size: medium;
+                color: color(terciary);
+            }
+        }
+    }
+    #addVilla{
+        width: 40%;
+        padding: 3%;
+       text-align: center;
+       color: color(secundary);
+        div{
+            width: 90%;
+            background-color: color(quinary);
+            padding: 3%;
+            li{
+                list-style: none;
+            }
+            hr{
+                border: 1.5px solid;
+            }
+            @include button2();
+        }
+
+    }
+}
+@include response(md){
+    #section-info-villa{
+        flex-direction: column;
+        #infoVilla{
+            width: 100%;
+            .infoVillaContainer{
+                flex-direction: column;
+                .infoVilla2{
+                    width: 100%;
+                }
+            }
+        }
+        #addVilla{
+            width: 100%;
+            div{
+                width: 100%;
+            }
+        }
+    }
+}

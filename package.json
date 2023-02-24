@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "node": "^19.6.0",
+    "node-sass": "^8.0.0"
+  },
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -o css scss/styles.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

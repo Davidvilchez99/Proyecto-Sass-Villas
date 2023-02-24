@@ -1,0 +1,9 @@
+/// Componente: imagen principal villa unica
+#imagenPrincipal{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}

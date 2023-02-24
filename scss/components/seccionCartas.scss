@@ -1,0 +1,52 @@
+/// Componente: seccion cartas
+#cards {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
+    #cartas-general {
+        @include flex($alignitem:none);
+        width: 100%;
+
+        #carta {
+            width: 20%;
+            height: 20%;
+            background-color: color(terniary);
+
+            div{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            div>img {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.25s;
+
+            }
+            div>img:hover{
+                transform: scale(1.1);
+            }
+
+            div {
+                text-align: center;
+                @include fafaIcons(color(secundary), 2em);
+            }
+        }
+    }
+}
+
+@include response(md){
+    #cards {
+        #cartas-general {
+            flex-direction: column;
+            align-items: center;
+            #carta {
+                width: 75%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+    

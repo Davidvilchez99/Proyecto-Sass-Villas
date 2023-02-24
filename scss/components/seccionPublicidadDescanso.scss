@@ -1,0 +1,53 @@
+/// Componente: publicidad descanso
+#publicidad-descanso{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+    // height: 30vh;
+    padding: 5%;
+    .div-principal{
+        // width: 100vw;
+        // height: 100vh;
+        color: color(quaternary);
+        h1{
+            margin-bottom: 5%;
+            
+        }
+        h4{
+            color: color(secundary);
+            text-decoration: underline;
+
+
+        }
+    }
+    .div-secundario{
+        @include flex($alignitem:none);
+            flex-wrap: wrap;
+            img{
+                height: 100%;
+            }
+        div{
+           width: 50%;
+           @include flex($alignitem:none);
+            flex-wrap: wrap;
+           div{
+            width: 50%;
+            height: 100%;
+           }
+        }
+    }
+}
+
+@include response(md){
+    #publicidad-descanso{
+        .div-secundario{
+            flex-direction: column;
+            justify-content: center;
+
+            div{
+                width: 100%;
+            }
+        }
+    }
+}
+    
