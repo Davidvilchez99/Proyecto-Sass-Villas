@@ -24,27 +24,47 @@
 }
 #inicio>div>div{
     /* background-color: green; */
-    width: 49.5vw;
-    height: 49.5vh;
+    width: 49vw;
+    height: 50vh;
     border: 1px solid white;
+    color: black;
+    font-size: 2em;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#inicio>div>div>h2{
+    background-color: white;
+    border-radius: 4px;
+    padding: 2%;
+}
+#inicio>div>div>h2>a{
+    text-decoration: none;
+    color: black;
+}
+#inicio>div>div>h2:hover{
+    background-color: gray;
+    color: white;
+}
+
 #div-colores{
-    background-image: url(./eb8c0a46c2085216dea7d19f92a60fd7_XL.jpg);
+    background-image: url(./imgs/eb8c0a46c2085216dea7d19f92a60fd7_XL.jpg);
     background-size: cover;
     background-position: center;
 }
 #div-tipografia{
-    background-image: url(./featured-carto-palette.png);
+    background-image: url(./imgs/featured-carto-palette.png);
     background-size: cover;
     background-position: center;
 }
 #div-iconos{
-    background-image: url(./open-graph-icons.png);
+    background-image: url(./imgs/open-graph-icons.png);
     background-size: cover;
     background-position: center;
 }
 #div-documentacion{
-    background-image: url(./Palettab.jpg);
+    background-image: url(./imgs/Palettab.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -54,6 +74,7 @@
 #colores{
     background-color: gray;
     padding: 5%;
+    text-align: center;
 }
 #colores-container{
     width: 80%;
@@ -153,6 +174,7 @@
 #tipografia{
     background-color: lightblue;
     padding: 5%;
+    text-align: center;
 }
 #tipografia-container{
     width: 80%;
@@ -211,6 +233,17 @@
 }
 
 #documentacion-container>div{ 
-    width: 30%;
+    width: 100%;
+    font-size: large;
+    padding: 2%;
+}
+#documentacion-container>div>p{ 
+    margin: 1%;
 }
 
+
+/**/
+.h2Style{
+    font-size: 2em;
+    color: black;
+}

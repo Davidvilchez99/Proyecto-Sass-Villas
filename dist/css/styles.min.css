@@ -10816,6 +10816,9 @@ textarea.form-control-lg {
   margin-right: 1%;
   color: rgb(154, 120, 35);
 }
+#cards #cartas-general #carta p {
+  padding: 1em;
+}
 
 @media (max-width: 768px) {
   #cards #cartas-general {
@@ -11170,6 +11173,18 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
+#amenities-section {
+  width: 100%;
+  background-color: lightgray;
+}
+#amenities-section div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: black;
+  padding: 5%;
+}
+
 main {
   display: grid;
   grid-template-columns: 8;
